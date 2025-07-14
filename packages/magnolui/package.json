@@ -1,0 +1,14 @@
+{
+  "name": "@magnolui/react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.tsx",
+  "types": "./src/index.ts",
+  "scripts": {
+    "tsc": "tsc -b"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1"
+}

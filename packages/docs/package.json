@@ -1,0 +1,20 @@
+{
+  "name": "@magnolui/docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/root.tsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "tsc": "tsc -b",
+    "storybook": "storybook dev -p 6006 --config-dir storybook",
+    "build-storybook": "storybook build --config-dir storybook"
+  },
+  "dependencies": {
+    "@magnolui/react": "workspace:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1"
+}

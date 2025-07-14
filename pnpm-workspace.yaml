@@ -1,0 +1,5 @@
+packages:
+  - "packages/*"
+
+nodeLinker: "isolated"
+linkWorkspacePackages: true
