@@ -7,11 +7,6 @@ const config = defineConfig({
   server: {
     port: 3000,
   },
-  css: {
-    modules: {
-      localsConvention: "dashesOnly",
-    },
-  },
 });
 
 export default config;

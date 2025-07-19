@@ -4,21 +4,17 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "storybook": "pnpm --filter @magnolui/docs storybook",
-    "build-storybook": "pnpm --filter @magnolui/docs build-storybook",
-    "dev": "pnpm --filter @magnolui/docs dev",
-    "build": "pnpm --filter @magnolui/docs build"
+    "dev:docs": "pnpm --filter @magnolui/docs dev",
+    "dev:storybook": "pnpm --filter @magnolui/docs storybook",
+    "build:storybook": "pnpm --filter @magnolui/docs build-storybook",
+    "build:docs": "pnpm --filter @magnolui/docs build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.12.1",
   "dependencies": {
-    "@vitejs/plugin-react": "^4.6.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "vite": "^7.0.4",
-    "vite-tsconfig-paths": "^5.1.4"
+    "vite": "^7.0.4"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.0.1",

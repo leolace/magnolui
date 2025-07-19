@@ -1,4 +1,4 @@
-import { MagButton } from "@mag/atoms";
+import { MagButton } from "@magnolui/react";
 
 export const App = () => {
   return (

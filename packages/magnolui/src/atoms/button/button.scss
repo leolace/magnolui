@@ -1,0 +1,14 @@
+.mag-button {
+  display: block;
+  background-color: red;
+
+  .mag-button-primary {
+    background-color: green;
+    color: black;
+  }
+}
+
+.mag-button-primary {
+  background-color: blue;
+  color: white;
+}
