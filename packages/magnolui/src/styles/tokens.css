@@ -1,0 +1,33 @@
+:root {
+  --primary-color: #3c3b49;
+  --secondary-color: #faf3eb;
+
+  --primary-color-hover: #4d4b5b; /* ~15% mais clara */
+  --secondary-color-hover: #eee6dd; /* ~10% mais escura */
+
+  --primary-color-active: #2e2d39; /* ~20% mais escura */
+  --secondary-color-active: #e2d9cf; /* ~20% mais escura */
+
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  --spacing-2xs: 0.25rem; /* 4px */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-sm: 0.75rem; /* 12px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-2xl: 2.5rem; /* 40px */
+  --spacing-3xl: 4rem; /* 64px */
+
+  --font-size-2xs: 0.625rem; /* 10px */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 1.5rem; /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+
+  --font-family: "Rubik", sans-serif;
+}

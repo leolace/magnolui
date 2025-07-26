@@ -6,8 +6,8 @@
   "scripts": {
     "typecheck": "tsc -b --noEmit",
     "build:tsc": "tsc -b tsconfig.build.json",
-    "build:css": "sass --no-source-map --style=compressed ./src:./dist",
-    "build": "pnpm clear:dist && pnpm build:tsc && pnpm build:css && pnpm replace-scss-imports",
+    "build:styles": "sass --no-source-map --style=compressed ./src:./dist",
+    "build": "pnpm clear:dist && pnpm build:tsc && pnpm build:styles && pnpm replace-scss-imports",
     "clear:dist": "rm -rf ./dist",
     "replace-scss-imports": "bash ./scripts/replace-scss-imports.sh"
   },
@@ -17,10 +17,9 @@
   "packageManager": "pnpm@10.12.1",
   "peerDependencies": {
     "react": ">=18.1",
-    "react-dom": ">=18.1",
     "typescript": ">=5"
   },
-  "devDependencies": {
-    "sass-embedded": "^1.89.2"
+  "dependencies": {
+    "lucide-react": "^0.526.0"
   }
 }

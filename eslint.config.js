@@ -15,17 +15,6 @@ export default eslintTypescript.config([
   storybook.configs["flat/recommended"],
   eslintJs.configs.recommended,
 
-  // Rules only for components
-  {
-    files: ["**/*.tsx"],
-    plugins: {
-      import: eslintImport,
-    },
-    rules: {
-      "import/no-default-export": "error",
-    },
-  },
-
   // Rules for all files
   {
     languageOptions: {
@@ -55,6 +44,16 @@ export default eslintTypescript.config([
         },
       ],
       "import/newline-after-import": "error",
+
+      "no-unused-vars": [
+        "error",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+        },
+      ],
+      "@typescript-eslint/no-unused-vars": "off",
     },
   },
 ]);
