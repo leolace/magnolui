@@ -5,12 +5,10 @@
   font-size: var(--font-size-md);
   border: 2px solid transparent;
   cursor: pointer;
-  border-radius: 0.15rem;
 
-  &__primary {
+  &__filled {
     background-color: var(--primary-color);
     color: var(--white-color);
-    border: 2px solid var(--primary-color);
 
     &:hover {
       background-color: var(--primary-color-hover);
@@ -21,30 +19,30 @@
     }
   }
 
-  &__secondary {
-    background-color: var(--secondary-color);
+  &__outlined {
+    background-color: transparent;
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
 
     &:hover {
-      background-color: var(--secondary-color-hover);
+      background-color: var(--transparent-hover);
     }
 
     &:active {
-      background-color: var(--secondary-color-active);
+      background-color: var(--transparent-active);
     }
   }
 
-  &__tertiary {
+  &__text {
     background-color: transparent;
     color: var(--primary-color);
 
     &:hover {
-      background-color: var(--secondary-color-hover);
+      background-color: var(--transparent-hover);
     }
 
     &:active {
-      background-color: var(--secondary-color-active);
+      background-color: var(--transparent-active);
     }
   }
 

@@ -1,4 +1,6 @@
-export const cls = (...args: (string | undefined | null | object)[]) => {
+export const cls = (
+  ...args: (string | undefined | null | object | boolean)[]
+) => {
   return args
     .flatMap((arg) => {
       if (!arg) return [];

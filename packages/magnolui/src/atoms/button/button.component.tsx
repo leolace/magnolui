@@ -1,8 +1,10 @@
+import type { MagElement } from "@mag/types";
 import { cls } from "@mag/utils/classnames";
-import { MagElement } from "../../types";
 import "./button.scss";
 
 export interface Props extends MagElement<HTMLButtonElement> {
+  type?: "text" | "filled" | "outlined";
+
   disabled?: boolean;
 
   /**
@@ -15,7 +17,7 @@ export interface Props extends MagElement<HTMLButtonElement> {
 
 export const MagButton = ({
   children,
-  type = "primary",
+  type = "filled",
   buttonType = "submit",
   className,
   disabled,

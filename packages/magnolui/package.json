@@ -16,10 +16,10 @@
   "license": "ISC",
   "packageManager": "pnpm@10.12.1",
   "peerDependencies": {
-    "react": ">=18.1",
-    "typescript": ">=5"
-  },
-  "dependencies": {
-    "lucide-react": "^0.526.0"
+    "react": ">=19.1",
+    "react-dom": ">=19.1",
+    "typescript": ">=5",
+    "@types/react": ">=19.1",
+    "@types/react-dom": ">=19.1"
   }
 }
