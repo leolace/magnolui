@@ -1,0 +1,14 @@
+.mag-select {
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  color: var(--primary-color);
+  width: 100%;
+
+  ul,
+  ol,
+  li {
+    list-style: none;
+    margin: 0;
+  }
+}

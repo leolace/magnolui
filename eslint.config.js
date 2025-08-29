@@ -45,7 +45,7 @@ export default eslintTypescript.config([
       ],
       "import/newline-after-import": "error",
 
-      "no-unused-vars": [
+      "@typescript-eslint/no-unused-vars": [
         "error",
         {
           argsIgnorePattern: "^_",
@@ -53,7 +53,8 @@ export default eslintTypescript.config([
           caughtErrorsIgnorePattern: "^_",
         },
       ],
-      "@typescript-eslint/no-unused-vars": "off",
+      "no-unused-vars": "off",
+      "no-undef": "off",
     },
   },
 ]);

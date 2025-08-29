@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "./src/root.tsx",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,9 +13,11 @@
   },
   "dependencies": {
     "@magnolui/react": "workspace:*",
+    "@tailwindcss/vite": "^4.1.12",
     "@vitejs/plugin-react": "^4.6.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.12",
     "vite-tsconfig-paths": "^5.1.4"
   },
   "keywords": [],

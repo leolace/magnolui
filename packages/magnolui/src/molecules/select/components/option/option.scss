@@ -1,0 +1,30 @@
+.mag-select-option {
+  display: block;
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-size: var(--font-size-md);
+  color: var(--primary-color);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--neutral-200);
+  }
+
+  &__selected {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+    &:hover {
+      background-color: var(--primary-color-hover);
+    }
+  }
+
+  &[data-disabled="true"] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &__disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

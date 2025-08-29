@@ -1,8 +1,9 @@
 import type { MagElement } from "@mag/types";
 import { cls } from "@mag/utils/classnames";
 import "./button.scss";
+import type { ReactNode } from "react";
 
-export interface Props extends MagElement<HTMLButtonElement> {
+export interface Props extends Omit<MagElement<"button">, "type"> {
   type?: "text" | "filled" | "outlined";
 
   disabled?: boolean;
@@ -13,6 +14,9 @@ export interface Props extends MagElement<HTMLButtonElement> {
   buttonType?: "button" | "submit" | "reset";
 
   loading?: boolean;
+
+  startIcon?: ReactNode;
+  endIcon?: ReactNode;
 }
 
 export const MagButton = ({
@@ -22,6 +26,8 @@ export const MagButton = ({
   className,
   disabled,
   loading,
+  startIcon,
+  endIcon,
   ...props
 }: Props) => {
   const buttonClasses = {
@@ -40,7 +46,11 @@ export const MagButton = ({
       type={buttonType}
       {...props}
     >
-      {children}
+      <div className="mag-button__content">
+        {startIcon}
+        <div className="mag-button__children">{children}</div>
+        {endIcon}
+      </div>
     </button>
   );
 };

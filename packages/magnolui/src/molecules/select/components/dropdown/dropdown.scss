@@ -1,0 +1,20 @@
+.mag-select-options {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  z-index: 9999999;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  list-style: none;
+  background-color: var(--white-color);
+  border: 2px solid var(--primary-color);
+  visibility: hidden;
+  opacity: 0;
+
+  &__open {
+    visibility: visible;
+    opacity: 1;
+  }
+}

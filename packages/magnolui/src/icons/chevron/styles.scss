@@ -1,0 +1,17 @@
+.mag-icon__chevron {
+  &__up {
+    transform: rotate(180deg);
+  }
+
+  &__down {
+    transform: rotate(0deg);
+  }
+
+  &__left {
+    transform: rotate(90deg);
+  }
+
+  &__right {
+    transform: rotate(-90deg);
+  }
+}
