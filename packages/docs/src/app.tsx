@@ -18,7 +18,7 @@ export const App = () => {
 
   return (
     <div className="grid m-auto w-full">
-      <div className="w-[300px] flex flex-col p-4 gap-10 mx-auto">
+      <div className="w-[800px] flex flex-col p-4 gap-10 mx-auto">
         <h1>Magnolui</h1>
 
         <div className="flex gap-2 items-end">
