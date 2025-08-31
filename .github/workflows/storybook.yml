@@ -1,8 +1,8 @@
 name: Deploy Storybook to GitHub Pages
 
 on:
-	push:
-		branches:
+  push:
+	  branches:
 			- main
 		paths:
 			- 'packages/magnolui/**'
