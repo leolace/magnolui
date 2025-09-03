@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - "packages/magnolui/**"
   workflow_dispatch:
 
 permissions:

@@ -2,7 +2,7 @@ import type { MagElement } from "@mag/types";
 import { cls } from "@mag/utils/classnames";
 import "./text-field.scss";
 
-interface Props extends MagElement<HTMLInputElement> {
+interface Props extends MagElement<"input"> {
   id: string;
   name: string;
   description?: string;

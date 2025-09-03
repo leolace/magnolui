@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import type { Options } from "../select.types";
 
-interface SelectContextProps {
+export interface SelectContextProps {
   selectedOptionValue?: string;
   setSelectedOptionValue: (value: string) => void;
   open: boolean;

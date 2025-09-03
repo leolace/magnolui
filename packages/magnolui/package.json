@@ -2,24 +2,31 @@
   "name": "@magnolui/react",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.tsx",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
   "scripts": {
     "typecheck": "tsc -b --noEmit",
     "build:tsc": "tsc -b tsconfig.build.json",
-    "build:styles": "sass --no-source-map --style=compressed ./src:./dist",
-    "build": "pnpm clear:dist && pnpm build:tsc && pnpm build:styles && pnpm replace-scss-imports",
-    "clear:dist": "rm -rf ./dist",
-    "replace-scss-imports": "bash ./scripts/replace-scss-imports.sh"
+    "build": "pnpm clear:dist && rolldown -c rolldown.config.ts",
+    "dev": "rolldown -w -c rolldown.config.ts",
+    "clear:dist": "rm -rf ./dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.12.1",
   "peerDependencies": {
+    "@types/react": ">=19.1",
+    "@types/react-dom": ">=19.1",
     "react": ">=19.1",
     "react-dom": ">=19.1",
-    "typescript": ">=5",
-    "@types/react": ">=19.1",
-    "@types/react-dom": ">=19.1"
+    "typescript": ">=5"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.4",
+    "rolldown": "1.0.0-beta.34",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2"
   }
 }

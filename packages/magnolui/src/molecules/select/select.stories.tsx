@@ -8,13 +8,13 @@ const meta: Meta<typeof MagSelect> = {
   args: {
     children: [
       <MagSelectOption key="option1" value="option1">
-        Option 1
+        Opção 1
       </MagSelectOption>,
       <MagSelectOption key="option2" value="option2">
-        Option 2
+        Opção 2
       </MagSelectOption>,
-      <MagSelectOption key="option3" value="option3">
-        Option 3
+      <MagSelectOption key="option3" value="option3" disabled>
+        Opção 3
       </MagSelectOption>,
     ],
     placeholder: "Select an option",

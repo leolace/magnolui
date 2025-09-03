@@ -2,7 +2,7 @@ import type { MagElement, MagSizes } from "@mag/types";
 import "./loader.scss";
 import { createPortal } from "react-dom";
 
-interface Props extends MagElement<HTMLSpanElement> {
+interface Props extends MagElement<"span"> {
   type: "spinner" | "dots";
   absolute?: boolean;
   backdrop?: boolean;
