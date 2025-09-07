@@ -3,9 +3,6 @@
   width: 100%;
   font-size: var(--font-size-md);
 
-  &__label {
-  }
-
   &__label-required::after {
     content: " *";
   }

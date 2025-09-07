@@ -1,0 +1,3 @@
+.mag-label:has(.mag-text-field__required)::after {
+  content: " *";
+}

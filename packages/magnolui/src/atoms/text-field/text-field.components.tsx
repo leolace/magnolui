@@ -1,5 +1,6 @@
 import type { MagElement } from "@mag/types";
 import { cls } from "@mag/utils/classnames";
+import { MagLabel } from "../label/label.component";
 import "./text-field.scss";
 
 interface Props extends MagElement<"input"> {
@@ -24,17 +25,21 @@ export const MagTextField = ({
   ...props
 }: Props) => {
   return (
-    <div className={cls("mag-text-field", className)} data-disabled={disabled}>
+    <div
+      className={cls(
+        "mag-text-field",
+        required && "mag-text-field__required",
+        className,
+      )}
+      data-disabled={disabled}
+    >
       {label && (
-        <label
+        <MagLabel
           htmlFor={id}
-          className={cls(
-            "mag-text-field__label",
-            required && "mag-text-field__label-required",
-          )}
+          className={cls(required && "mag-text-field__label-required")}
         >
           {label}
-        </label>
+        </MagLabel>
       )}
       <input
         id={id}
