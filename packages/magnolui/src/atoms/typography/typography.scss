@@ -1,0 +1,37 @@
+.mag-typography {
+  &__primary {
+    color: var(--primary-color);
+  }
+
+  &__secondary {
+    color: var(--secondary-color);
+  }
+
+  &__danger {
+    color: var(--danger-color);
+  }
+
+  &__warn {
+    color: var(--warn-color);
+  }
+
+  &__success {
+    color: var(--success-color);
+  }
+
+  &__80 {
+    opacity: 0.8;
+  }
+
+  &__60 {
+    opacity: 0.6;
+  }
+
+  &__40 {
+    opacity: 0.4;
+  }
+
+  &__20 {
+    opacity: 0.2;
+  }
+}

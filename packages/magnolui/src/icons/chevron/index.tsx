@@ -5,7 +5,7 @@ interface Props {
   direction?: "up" | "down" | "left" | "right";
 }
 
-export const Chevron = ({ direction = "right", size = 24 }: Props) => {
+export const MagIconChevron = ({ direction = "right", size = 24 }: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

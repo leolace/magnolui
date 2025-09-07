@@ -1,14 +1,14 @@
 :root {
-  --primary-color: #3c3b49;
+  --primary-color: #2c2b36;
   --secondary-color: #faf3eb;
 
-  --primary-color-hover: #4d4b5b; /* ~15% mais clara */
-  --secondary-color-hover: #eee6dd; /* ~10% mais escura */
-  --transparent-hover: rgba(60, 59, 73, 0.1); /* ~10% mais clara */
+  --primary-color-hover: #3d3b4b; /* ~15% mais clara */
+  --secondary-color-hover: #343340; /* ~10% mais escura */
+  --transparent-hover: #45445533; /* ~10% mais clara */
 
-  --primary-color-active: #2e2d39; /* ~20% mais escura */
-  --secondary-color-active: #e2d9cf; /* ~20% mais escura */
-  --transparent-active: rgba(60, 59, 73, 0.2); /* ~20% mais escura */
+  --primary-color-active: #2f2e3a; /* ~20% mais escura */
+  --secondary-color-active: #2f2e3a; /* ~20% mais escura */
+  --transparent-active: #2f2e3a33; /* ~20% mais escura */
 
   --white-color: #ffffff;
   --black-color: #000000;
@@ -23,6 +23,10 @@
   --neutral-800: #404040; /* ~70% mais clara */
   --neutral-900: #202020; /* ~80% mais clara */
   --neutral-1000: #101010; /* ~90% mais clara */
+
+  --danger-color: #e53935;
+  --warn-color: #ffb300;
+  --success-color: #43a047;
 
   --spacing-2xs: 0.25rem; /* 4px */
   --spacing-xs: 0.5rem; /* 8px */

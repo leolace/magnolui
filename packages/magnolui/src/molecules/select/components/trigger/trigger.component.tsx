@@ -1,4 +1,4 @@
-import { Chevron } from "@mag/icons/chevron";
+import { MagIconChevron } from "@mag/icons/chevron";
 import { Children, isValidElement, useMemo } from "react";
 import { useSelectContext } from "../../context";
 import type { Options } from "../../select.types";
@@ -32,7 +32,7 @@ export const SelectTrigger = ({ children, placeholder }: Props) => {
       ) : (
         <span className="mag-select-value__placeholder">{placeholder}</span>
       )}
-      <Chevron direction={open ? "up" : "down"} />
+      <MagIconChevron direction={open ? "up" : "down"} />
     </div>
   );
 };
