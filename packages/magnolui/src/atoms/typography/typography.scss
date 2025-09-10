@@ -1,4 +1,8 @@
 .mag-typography {
+  &__default {
+    color: var(--text-color);
+  }
+
   &__primary {
     color: var(--primary-color);
   }

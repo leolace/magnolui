@@ -12,6 +12,7 @@ interface Props extends MagElement<"input"> {
   disabled?: boolean;
   value?: string;
   required?: boolean;
+  errorMessage?: string;
 }
 
 export const MagTextField = ({
@@ -22,6 +23,7 @@ export const MagTextField = ({
   className,
   disabled,
   required,
+  errorMessage,
   ...props
 }: Props) => {
   return (
@@ -51,6 +53,9 @@ export const MagTextField = ({
       />
       {description && (
         <small className="mag-text-field__description">{description}</small>
+      )}
+      {errorMessage && (
+        <small className="mag-text-field__error">{errorMessage}</small>
       )}
     </div>
   );

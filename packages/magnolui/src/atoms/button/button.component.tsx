@@ -1,7 +1,7 @@
 import type { MagElement } from "@mag/types";
 import { cls } from "@mag/utils/classnames";
-import "./button.scss";
 import type { ReactNode } from "react";
+import "./button.scss";
 
 export interface Props extends Omit<MagElement<"button">, "type"> {
   type?: "text" | "filled" | "outlined";
@@ -11,7 +11,7 @@ export interface Props extends Omit<MagElement<"button">, "type"> {
   /**
    * @default "submit"
    */
-  buttonType?: "button" | "submit" | "reset";
+  buttonType?: MagElement<"button">["type"];
 
   loading?: boolean;
 

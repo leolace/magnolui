@@ -41,4 +41,10 @@
       cursor: not-allowed;
     }
   }
+
+  &__error {
+    color: var(--danger-color);
+    font-size: var(--font-size-xs);
+    margin-top: var(--spacing-2xs);
+  }
 }

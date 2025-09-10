@@ -1,6 +1,6 @@
 import type { MagElement } from "@mag/types";
-import "./typography.scss";
 import { cls } from "@mag/utils/classnames";
+import "./typography.scss";
 
 type AllowedTags = keyof Pick<
   HTMLElementTagNameMap,
@@ -9,13 +9,13 @@ type AllowedTags = keyof Pick<
 
 type Props<T extends AllowedTags = "p"> = MagElement<T> & {
   tag?: T;
-  type?: "primary" | "secondary" | "danger" | "warn" | "success";
+  type?: "default" | "primary" | "secondary" | "danger" | "warn" | "success";
   opacity?: "100" | "80" | "60" | "40" | "20";
 };
 
 export const MagTypography = <T extends AllowedTags = "p">({
   tag = "p" as T,
-  type = "primary",
+  type = "default",
   opacity = "100",
   className,
   children,
