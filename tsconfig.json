@@ -2,7 +2,6 @@
   "compilerOptions": {
     "tsBuildInfoFile": "./.tmp/tsconfig.tsbuildinfo",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["vite/client"],
     "allowImportingTsExtensions": false,
     "incremental": true,
     "target": "es2020",

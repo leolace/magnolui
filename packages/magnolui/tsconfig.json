@@ -1,4 +1,7 @@
 {
   "extends": "../../tsconfig.json",
-  "include": ["./src", "dist"]
+  "include": ["./src", "dist"],
+  "compilerOptions": {
+    "types": ["storybook/test"]
+  }
 }

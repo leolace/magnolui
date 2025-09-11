@@ -7,10 +7,10 @@
   "module": "./dist/index.js",
   "scripts": {
     "typecheck": "tsc -b --noEmit",
-    "build:tsc": "tsc -b tsconfig.build.json",
     "build": "pnpm clear:dist && rolldown -c rolldown.config.ts",
     "dev": "rolldown -w -c rolldown.config.ts",
-    "clear:dist": "rm -rf ./dist"
+    "clear:dist": "rm -rf ./dist",
+    "test": "vitest --project=magnolui-react -c ../docs/vitest.config.ts"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +27,7 @@
     "@rollup/plugin-typescript": "^12.1.4",
     "rolldown": "1.0.0-beta.34",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^4.0.2"
+    "rollup-plugin-postcss": "^4.0.2",
+    "@types/rollup-plugin-peer-deps-external": "^2.2.5"
   }
 }

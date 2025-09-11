@@ -49,6 +49,7 @@ export const MagTextField = ({
         className={cls("mag-text-field__input", className)}
         disabled={disabled}
         required={required}
+        data-testid="mag-text-field"
         {...props}
       />
       {description && (
