@@ -1,7 +1,12 @@
 {
   "extends": "../../tsconfig.json",
-  "include": ["./src", "dist"],
   "compilerOptions": {
-    "types": ["storybook/test"]
-  }
+    "outDir": "./dist",
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+    "incremental": false,
+    "declaration": true
+  },
+  "include": ["./src"],
+  "exclude": ["**/*.stories.*"]
 }

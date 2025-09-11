@@ -6,7 +6,7 @@ import pkg from "./package.json";
 
 export default defineConfig({
   input: "./src/index.tsx",
-  tsconfig: "./tsconfig.build.json",
+  tsconfig: "./tsconfig.json",
   output: {
     file: pkg.module,
     format: "esm",
@@ -14,7 +14,7 @@ export default defineConfig({
   },
   plugins: [
     peerDepsExternal(),
-    typescript({ tsconfig: "./tsconfig.build.json" }),
+    typescript({ tsconfig: "./tsconfig.json" }),
     postcss(),
   ],
 });
